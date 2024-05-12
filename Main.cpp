@@ -53,59 +53,59 @@ public:
     enum Directions {LEFT, RIGHT, DOWN, UP};
 
     Snake() {
-        Image Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\head_right.png");
+        Image Im = LoadImage("Graphics\\head_right.png");
         head_right = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\head_left.png");
+        Im = LoadImage("Graphics\\head_left.png");
         head_left = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\head_up.png");
+        Im = LoadImage("Graphics\\head_up.png");
         head_up = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\head_down.png");
+        Im = LoadImage("Graphics\\head_down.png");
         head_down = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\tail_up.png");
+        Im = LoadImage("Graphics\\tail_up.png");
         tail_down = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\tail_down.png");
+        Im = LoadImage("Graphics\\tail_down.png");
         tail_up = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\tail_left.png");
+        Im = LoadImage("Graphics\\tail_left.png");
         tail_right = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\tail_right.png");
+        Im = LoadImage("Graphics\\tail_right.png");
         tail_left = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_topright.png");
+        Im = LoadImage("Graphics\\body_topright.png");
         body_topright = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_topleft.png");
+        Im = LoadImage("Graphics\\body_topleft.png");
         body_topleft = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_bottomright.png");
+        Im = LoadImage("Graphics\\body_bottomright.png");
         body_bottomright = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_bottomleft.png");
+        Im = LoadImage("Graphics\\body_bottomleft.png");
         body_bottomleft = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_horizontal.png");
+        Im = LoadImage("Graphics\\body_horizontal.png");
         body_horizontal = LoadTextureFromImage(Im);
         UnloadImage(Im);
 
-        Im = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\body_vertical.png");
+        Im = LoadImage("Graphics\\body_vertical.png");
         body_vertical = LoadTextureFromImage(Im);
         UnloadImage(Im);
     }
@@ -249,7 +249,7 @@ public:
 
     Food(deque<Vector2> snakeBody)
     {
-        Image image = LoadImage("D:\\Projects\\Raylib_snake\\Graphics\\apple.png");
+        Image image = LoadImage("Graphics\\apple.png");
         texture = LoadTextureFromImage(image);
         UnloadImage(image);
         position = GenerateRandomPos(snakeBody);
@@ -297,8 +297,8 @@ public:
     Game()
     {
         InitAudioDevice();
-        eatSound = LoadSound("D:\\Projects\\Raylib_snake\\Sounds\\eat.mp3");
-        wallSound = LoadSound("D:\\Projects\\Raylib_snake\\Sounds\\wall.mp3");
+        eatSound = LoadSound("Sounds\\eat.mp3");
+        wallSound = LoadSound("Sounds\\wall.mp3");
     }
 
     ~Game()
